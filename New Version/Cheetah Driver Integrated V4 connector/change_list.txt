@@ -1,0 +1,18 @@
+Changes:
+
+True 4 layer design (internal gnd and 3.3v)
+Smaller LDO
+Smaller CAN Tranceiver (TLE7250XLEXUMA1)?
+Smaller buck inductor (or at least smaller footprint)
+0402 passives where possible
+FETs all on one side if possible
+4 mounting holes
+Smaller encoder IC?
+6 mil traces (.16mm), .3mm vias everywhere
+
+New Parts
+
+LDFM33PUR   - LDO
+NRH3012T220MN/SRU2013-220Y  - inductor
+MBR0580S1-7  -  diode
+

@@ -1,0 +1,33 @@
+Partlist exported from C:/Users/ben/Documents/eagle/Cheetah Driver Integrated V4 connector/HKCV4.sch at 12/6/2018 10:33:02 AM
+
+Qty Value         Device        Package              Parts                                                                             Description                                                 
+2   .001          R-US_R1210    R1210                R6, R7                                                                            RESISTOR, American symbol                                   
+8   .1 uF 10v     C-USC0402K    C0402K               C18, C27, C31, C32, C33, C34, C41, VREFCAP                                        CAPACITOR, American symbol                                  
+2   .1 uF 50v     C-USC0603K    C0603K               C2, C4                                                                            CAPACITOR, American symbol                                  
+3   1 uF 10v      C-USC0402K    C0402K               C7, C10, MC1                                                                      CAPACITOR, American symbol                                  
+1   1 uF 50v      C-USC0603K    C0603K               C6                                                                                CAPACITOR, American symbol                                  
+17  10 uF 50v     C-USC1206K    C1206K               C1, C8, C11, C12, C13, C14, C15, C16, C17, C21, C22, C23, C24, C25, C26, C28, C29 CAPACITOR, American symbol                                  
+2   10k           R-US_R0402    R0402                R3, R4                                                                            RESISTOR, American symbol                                   
+2   10k 1%        R-US_R0402    R0402                R2, R27                                                                           RESISTOR, American symbol                                   
+1   150k 1%       R-US_R0402    R0402                R26                                                                               RESISTOR, American symbol                                   
+3   18_AWG_PAD    18_AWG_PAD    18_AWG_PAD           U$2, U$4, U$5                                                                                                                                 
+2   200           R-US_R0402    R0402                R5, R22                                                                           RESISTOR, American symbol                                   
+3   22 uF 10v     C-USC0603K    C0603K               C3, C19, C20                                                                      CAPACITOR, American symbol                                  
+1   22uH          SDR0302       SDR0302              L1                                                                                POWER INDUCTOR                                              
+1   4.7 uF 10v    C-USC0402K    C0402K               C9                                                                                CAPACITOR, American symbol                                  
+1   47 nF 50v     C-USC0402K    C0402K               C5                                                                                CAPACITOR, American symbol                                  
+1   500 mA 60v    DIODE-SOD123  SOD123               D1                                                                                DIODE                                                       
+1   5267-3        5267-3        5267-3               CAN                                                                                                                                           
+1   54.9k 1%      R-US_R0402    R0402                R1                                                                                RESISTOR, American symbol                                   
+1   600r          INDUCTOR0603  0603                 CHOKE                                                                             Inductors                                                   
+1   CSTCE         CSTCE         CSTCE                XT1                                                                                                                                           
+1   DRV8323RH     DRV8323RH     QFN50P700X700X90-49N U$1                                                                                                                                           
+2   G             LED0603       LED-0603             LED1, LED2                                                                        LEDs                                                        
+1   LDFM          LDFM          DFN6-3X3             LDFM33PUR                                                                                                                                     
+1   MA700         MA700         QFN16                U$11                                                                                                                                          
+1   MCP2542       MCP2542       TDFN                 U$6                                                                                                                                           
+1   SM07B-SRSS-TB SM07B-SRSS-TB SM07B-SRSS-TB        PROG                                                                              Disconnectable Crimp style connector, 1.0mm pitch7 contacts 
+1   STM32F446RET6 STM32F446RET6 TQFP64               U$3                                                                               ARM DSP Chip used on the WAV Trigger board.                 
+6   TPH           TPH           TRANS_TPH5900CNH,L1Q Q1, Q2, Q3, Q4, Q5, Q6                                                                                                                        
+1   XT30          XT30          XT30_HORIZONTAL      U$9                                                                                                                                           
+3   dnp           C-USC0402K    C0402K               YCAP1, YCAP2, YCAP3                                                               CAPACITOR, American symbol                                  

@@ -1,0 +1,59 @@
+Partlist exported from C:/Users/Ben/Documents/eagle/Cheetah Driver Integrated V4/ESCMK2V4.sch at 5/31/2018 10:10:08 AM
+
+Part    Value         Device        Package              Description                                                 
+C1                    C-USC1206K    C1206K               CAPACITOR, American symbol  ##### Bus cap                                
+C2      .1 uF         C-USC0603K    C0603K               CAPACITOR, American symbol                                  
+C3      10 uF         C-USC0805K    C0805K               CAPACITOR, American symbol                                  
+C4      .1 uF         C-USC0603K    C0603K               CAPACITOR, American symbol                                  
+C5      47 nF         C-USC0603K    C0603K               CAPACITOR, American symbol                                  
+C6      1 uF          C-USC0603K    C0603K               CAPACITOR, American symbol                                  
+C7      1 uF          C-USC0402K    C0402K               CAPACITOR, American symbol                                  
+C8                    C-USC1206K    C1206K               CAPACITOR, American symbol                                  
+C9      4.7           C-USC0603K    C0603K               CAPACITOR, American symbol                                  
+C10     1uF           C-USC0402K    C0402K               CAPACITOR, American symbol                                                                   
+C27     100nF         C-USC0402K    C0402K               CAPACITOR, American symbol                                  
+C28                   C-USC0402K    C0402K               CAPACITOR, American symbol                                  
+C31     100nF         C-USC0402K    C0402K               CAPACITOR, American symbol                                  
+C32     100nF         C-USC0402K    C0402K               CAPACITOR, American symbol                                  
+C33     .1 uF         C-USC0402K    C0402K               CAPACITOR, American symbol                                  
+C34     .1 uF         C-USC0402K    C0402K               CAPACITOR, American symbol                                  
+C35                   C-USC0402K    C0402K               CAPACITOR, American symbol                                  
+C41     15 nF         C-USC0402     C0402                CAPACITOR, American symbol                                  
+CHOKE   600r          INDUCTOR0603  0603                 Inductors                                                   
+D1                    DIODE-SOD123  SOD123               DIODE                                                       
+L1      22uH          SDR0302       SDR0302              POWER INDUCTOR                                              
+LED1    G             LED0603       LED-0603             LEDs                                                        
+LED2    G             LED0603       LED-0603             LEDs                                                        
+MC1     1uf           C-USC0402     C0402                CAPACITOR, American symbol                                  
+MC2     22uf          C-USC0603K    C0603K               CAPACITOR, American symbol                                  
+PROG    SM06B-SRSS-TB SM06B-SRSS-TB SM06B-SRSS-TB        Disconnectable Crimp style connector, 1.0mm pitch6 contacts 
+Q1      PH7030L       PH7030L       SOT669               N-channel TrenchMOS (TM) logic level FET                    
+Q2      PH7030L       PH7030L       SOT669               N-channel TrenchMOS (TM) logic level FET                    
+Q3      PH7030L       PH7030L       SOT669               N-channel TrenchMOS (TM) logic level FET                    
+Q4      PH7030L       PH7030L       SOT669               N-channel TrenchMOS (TM) logic level FET                    
+Q5      PH7030L       PH7030L       SOT669               N-channel TrenchMOS (TM) logic level FET                    
+Q6      PH7030L       PH7030L       SOT669               N-channel TrenchMOS (TM) logic level FET                    
+R1                    R-US_R0402    R0402                RESISTOR, American symbol                                   
+R2                    R-US_R0402    R0402                RESISTOR, American symbol                                   
+R3                    R-US_R0402    R0402                RESISTOR, American symbol                                   
+R4                    R-US_R0402    R0402                RESISTOR, American symbol                                   
+R5      70            R-US_R0402    R0402                RESISTOR, American symbol                                   
+R6                    R-US_R1210    R1210                RESISTOR, American symbol                                   
+R7                    R-US_R1210    R1210                RESISTOR, American symbol                                   
+R22     70            R-US_R0402    R0402                RESISTOR, American symbol                                   
+R26                   R-US_R0402    R0402                RESISTOR, American symbol                                   
+R27                   R-US_R0402    R0402                RESISTOR, American symbol                                   
+SER     SM03B-SRSS-TB SM03B-SRSS-TB SM03B-SRSS-TB        Disconnectable Crimp style connector, 1.0mm pitch3 contacts 
+SER1    SM03B-SRSS-TB SM03B-SRSS-TB SM03B-SRSS-TB        Disconnectable Crimp style connector, 1.0mm pitch3 contacts 
+U$1     DRV8323RH     DRV8323RH     QFN50P700X700X90-49N                                                             
+U$2     18_AWG_PAD    18_AWG_PAD    18_AWG_PAD                                                                       
+U$3     STM32F446RET6 STM32F446RET6 TQFP64               ARM DSP Chip used on the WAV Trigger board.                 
+U$4     18_AWG_PAD    18_AWG_PAD    18_AWG_PAD                                                                       
+U$5     18_AWG_PAD    18_AWG_PAD    18_AWG_PAD                                                                       
+U$6     MCP2542       MCP2542       TDFN                                                                             
+U$7     LDFM          LDFM          DFN6-3X3                                                                         
+U$8     18_AWG_PAD    18_AWG_PAD    18_AWG_PAD                                                                       
+U$9     AS5147P       AS5147P       TSSOP14                                                                          
+U$10    18_AWG_PAD    18_AWG_PAD    18_AWG_PAD                                                                       
+VREFCAP 100nF         C-USC0402     C0402                CAPACITOR, American symbol                                  
+XT1     CSTCE         CSTCE         CSTCE                                                                            
