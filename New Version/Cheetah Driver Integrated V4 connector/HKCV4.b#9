@@ -1268,22 +1268,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
-<package name="C0402">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
-<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
-<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
 <package name="C0402K">
 <description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0204 reflow solder&lt;/b&gt;&lt;p&gt;
 Metric Code Size 1005</description>
@@ -1939,6 +1923,31 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </package>
 </packages>
 </library>
+<library name="con-molex-c-grid">
+<description>&lt;b&gt;MOLEX C-Grid Connectors&lt;/b&gt; - v1.02 (12/20/2009)&lt;p&gt;
+Contains C-Grid and C-Grid III connectors&lt;p&gt;
+NOTE: C-Grid III does not mate to C-Grid types
+&lt;p&gt;THIS LIBRARY IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED.&lt;br&gt;
+USE AT YOUR OWN RISK!&lt;p&gt;
+&lt;author&gt;Copyright (C) 2009, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;&lt;/author&gt;</description>
+<packages>
+<package name="901481103">
+<pad name="P$1" x="-2.54" y="-3.81" drill="0.8"/>
+<pad name="P$2" x="0" y="-3.81" drill="0.8"/>
+<pad name="P$3" x="2.54" y="-3.81" drill="0.8"/>
+<pad name="P$4" x="2.54" y="3.81" drill="0.8"/>
+<pad name="P$5" x="0" y="3.81" drill="0.8"/>
+<pad name="P$6" x="-2.54" y="3.81" drill="0.8"/>
+<wire x1="-3.81" y1="4.2545" x2="3.81" y2="4.2545" width="0.127" layer="21"/>
+<wire x1="3.81" y1="4.2545" x2="3.81" y2="-4.2545" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-4.2545" x2="-3.81" y2="-4.2545" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-4.2545" x2="-3.81" y2="4.2545" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0" x2="3.175" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="1.905" y2="-2.54" width="0.127" layer="21"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2128,34 +2137,34 @@ design rules under a new name.</description>
 <element name="U$1" library="BenLibrary" package="QFN50P700X700X90-49N" value="DRV8323RH" x="-6.86" y="2.9" smashed="yes" rot="R45">
 <attribute name="VALUE" x="-3.4654625" y="-5.37979375" size="2.0828" layer="27" ratio="10" rot="SR45"/>
 </element>
-<element name="D1" library="diode" package="SOD123" value="" x="-14.18" y="5.58" smashed="yes" rot="R180">
+<element name="D1" library="diode" package="SOD123" value="500 mA 60v" x="-14.18" y="5.58" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-13.08" y="7.88" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="L1" library="inductor-bourns" package="SDR0302" value="22uH" x="-15.83" y="8.9" smashed="yes">
 <attribute name="VALUE" x="-17.705" y="5.775" size="0.8128" layer="27" ratio="10"/>
 </element>
-<element name="C2" library="rcl" package="C0603K" value=".1 uF" x="-15.42" y="3.96" smashed="yes" rot="R180">
+<element name="C2" library="rcl" package="C0603K" value=".1 uF 50v" x="-15.42" y="3.96" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-14.62" y="5.61" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="C3" library="rcl" package="C0603K" value="22 uF" x="-16.27" y="12.09" smashed="yes" rot="R180">
+<element name="C3" library="rcl" package="C0603K" value="22 uF 10v" x="-16.27" y="12.09" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-15.47" y="13.74" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="R1" library="rcl" package="R0402" value="54.9k" x="-15.8" y="-0.27" smashed="yes" rot="R180">
+<element name="R1" library="rcl" package="R0402" value="54.9k 1%" x="-15.8" y="-0.27" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-15.165" y="1.635" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R2" library="rcl" package="R0402" value="10k" x="-15.78" y="-1.48" smashed="yes">
+<element name="R2" library="rcl" package="R0402" value="10k 1%" x="-15.78" y="-1.48" smashed="yes">
 <attribute name="VALUE" x="-16.415" y="-3.385" size="1.27" layer="27"/>
 </element>
-<element name="C4" library="rcl" package="C0603K" value=".1 uF" x="-12.16" y="7.48" smashed="yes">
+<element name="C4" library="rcl" package="C0603K" value=".1 uF 50v" x="-12.16" y="7.48" smashed="yes">
 <attribute name="VALUE" x="-12.96" y="5.83" size="1.016" layer="27"/>
 </element>
-<element name="C5" library="rcl" package="C0402K" value="47 nF" x="-13.47" y="-1.26" smashed="yes" rot="R90">
+<element name="C5" library="rcl" package="C0402K" value="47 nF 50v" x="-13.47" y="-1.26" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-11.82" y="-2.06" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="C6" library="rcl" package="C0603K" value="1 uF" x="-11.81" y="-1.2" smashed="yes" rot="R90">
+<element name="C6" library="rcl" package="C0603K" value="1 uF 50v" x="-11.81" y="-1.2" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-10.16" y="-2" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="C7" library="rcl" package="C0402K" value="1 uF" x="-5.72" y="8.4" smashed="yes">
+<element name="C7" library="rcl" package="C0402K" value="1 uF 10v" x="-5.72" y="8.4" smashed="yes">
 <attribute name="VALUE" x="-6.22" y="6.95" size="1.016" layer="27"/>
 </element>
 <element name="R3" library="rcl" package="R0402" value="10k" x="-0.43" y="7.98" smashed="yes" rot="R90">
@@ -2182,34 +2191,34 @@ design rules under a new name.</description>
 <element name="Q5" library="transistor-power" package="TRANS_TPH5900CNH,L1Q" value="TPH" x="7.4" y="-11.49" smashed="yes" rot="R90">
 <attribute name="VALUE" x="9.305" y="-7.045" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="VREFCAP" library="rcl" package="C0402K" value="100nF" x="-0.67" y="4.39" smashed="yes" rot="R270">
+<element name="VREFCAP" library="rcl" package="C0402K" value=".1 uF 10v" x="-0.67" y="4.39" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-2.575" y="5.025" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="U$3" library="BenLibrary" package="TQFP64" value="STM32F446RET6" x="8.53" y="8.54" smashed="yes" rot="R90">
 <attribute name="VALUE" x="11.53" y="5.54" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="R26" library="rcl" package="R0402" value="150k" x="-2.6" y="8.68" smashed="yes" rot="R180">
+<element name="R26" library="rcl" package="R0402" value="150k 1%" x="-2.6" y="8.68" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-1.965" y="10.585" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R27" library="rcl" package="R0402" value="10k" x="-2.33" y="10.6" smashed="yes" rot="R270">
+<element name="R27" library="rcl" package="R0402" value="10k 1%" x="-2.33" y="10.6" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-4.235" y="11.235" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="CHOKE" library="SparkFun-Passives" package="0603" value="600r" x="17.21" y="12" smashed="yes" rot="R270">
 <attribute name="VALUE" x="16.067" y="13.016" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="C9" library="rcl" package="C0402K" value="4.7" x="5.58" y="16.05" smashed="yes">
+<element name="C9" library="rcl" package="C0402K" value="4.7 uF 10v" x="5.58" y="16.05" smashed="yes">
 <attribute name="VALUE" x="4.78" y="14.4" size="1.016" layer="27"/>
 </element>
-<element name="C10" library="rcl" package="C0402K" value="1uF" x="17.04" y="4.46" smashed="yes" rot="R270">
+<element name="C10" library="rcl" package="C0402K" value="1 uF 10v" x="17.04" y="4.46" smashed="yes" rot="R270">
 <attribute name="VALUE" x="15.59" y="4.96" size="1.016" layer="27" rot="R270"/>
 </element>
-<element name="C27" library="rcl" package="C0402K" value="100nF" x="11.33" y="16.07" smashed="yes">
+<element name="C27" library="rcl" package="C0402K" value=".1 uF 10v" x="11.33" y="16.07" smashed="yes">
 <attribute name="VALUE" x="10.83" y="14.62" size="1.016" layer="27"/>
 </element>
-<element name="C31" library="rcl" package="C0402K" value="100nF" x="15.79" y="4.5" smashed="yes" rot="R270">
+<element name="C31" library="rcl" package="C0402K" value=".1 uF 10v" x="15.79" y="4.5" smashed="yes" rot="R270">
 <attribute name="VALUE" x="14.34" y="5" size="1.016" layer="27" rot="R270"/>
 </element>
-<element name="C32" library="rcl" package="C0402K" value="100nF" x="1" y="5.38" smashed="yes" rot="R90">
+<element name="C32" library="rcl" package="C0402K" value=".1 uF 10v" x="1" y="5.38" smashed="yes" rot="R90">
 <attribute name="VALUE" x="2.45" y="4.88" size="1.016" layer="27" rot="R90"/>
 </element>
 <element name="LED1" library="SparkFun-LED" package="LED-0603" value="G" x="-0.01" y="11.41" smashed="yes" rot="R90">
@@ -2227,62 +2236,62 @@ design rules under a new name.</description>
 <element name="XT1" library="sc_usercreated" package="CSTCE" value="CSTCE" x="17.16" y="8.35" smashed="yes" rot="R90">
 <attribute name="VALUE" x="19.7" y="8.35" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C41" library="rcl" package="C0402" value="100nF" x="15.95" y="11.66" smashed="yes" rot="R90">
+<element name="C41" library="rcl" package="C0402K" value=".1 uF 10v" x="15.95" y="11.66" smashed="yes" rot="R90">
 <attribute name="VALUE" x="17.855" y="11.025" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R6" library="rcl" package="R1210" value=".001" x="-2.94" y="-6.03" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-6.115" y="-3.49" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C33" library="rcl" package="C0402K" value=".1 uF" x="11.04" y="1.14" smashed="yes">
+<element name="C33" library="rcl" package="C0402K" value=".1 uF 10v" x="11.04" y="1.14" smashed="yes">
 <attribute name="VALUE" x="10.54" y="-0.31" size="1.016" layer="27"/>
 </element>
-<element name="C34" library="rcl" package="C0402K" value=".1 uF" x="5.06" y="-0.55" smashed="yes" rot="R90">
+<element name="C34" library="rcl" package="C0402K" value=".1 uF 10v" x="5.06" y="-0.55" smashed="yes" rot="R90">
 <attribute name="VALUE" x="6.51" y="-1.05" size="1.016" layer="27" rot="R90"/>
 </element>
 <element name="U$4" library="BenLibrary" package="18_AWG_PAD" value="18_AWG_PAD" x="-8" y="-16.9" smashed="yes"/>
 <element name="U$2" library="BenLibrary" package="18_AWG_PAD" value="18_AWG_PAD" x="0" y="-16.9" smashed="yes"/>
 <element name="U$5" library="BenLibrary" package="18_AWG_PAD" value="18_AWG_PAD" x="8" y="-16.9" smashed="yes"/>
 <element name="U$6" library="BenLibrary" package="TDFN" value="MCP2542" x="9.38" y="0.36" smashed="yes" rot="R270"/>
-<element name="U$7" library="BenLibrary" package="DFN6-3X3" value="LDFM" x="-10.4" y="10.2" smashed="yes" rot="R180">
+<element name="LDFM33PUR" library="BenLibrary" package="DFN6-3X3" value="LDFM" x="-10.4" y="10.2" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-8.95" y="13.4" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="MC1" library="rcl" package="C0402" value="1uf" x="-13.02" y="10.19" smashed="yes" rot="R90">
+<element name="MC1" library="rcl" package="C0402K" value="1 uF 10v" x="-13.02" y="10.19" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-11.115" y="9.555" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C19" library="rcl" package="C0603K" value="22uf" x="-7.56" y="11.53" smashed="yes" rot="R90">
+<element name="C19" library="rcl" package="C0603K" value="22 uF 10v" x="-7.56" y="11.53" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-5.91" y="10.73" size="1.016" layer="27" rot="R90"/>
 </element>
 <element name="R7" library="rcl" package="R1210" value=".001" x="-7.54" y="-6.05" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-10.715" y="-3.51" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C1" library="rcl" package="C1206K" value="10" x="0.63" y="-5.85" smashed="yes" rot="R90">
+<element name="C1" library="rcl" package="C1206K" value="10 uF 50v" x="0.63" y="-5.85" smashed="yes" rot="R90">
 <attribute name="VALUE" x="2.73" y="-7.45" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="C8" library="rcl" package="C1206K" value="10" x="-13.1" y="-5.55" smashed="yes" rot="R90">
+<element name="C8" library="rcl" package="C1206K" value="10 uF 50v" x="-13.1" y="-5.55" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-11" y="-7.15" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="C11" library="rcl" package="C1206K" value="10" x="-15.15" y="-5.55" smashed="yes" rot="R90">
+<element name="C11" library="rcl" package="C1206K" value="10 uF 50v" x="-15.15" y="-5.55" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-13.05" y="-7.15" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="C12" library="rcl" package="C1206K" value="10" x="8.69" y="-6" smashed="yes" rot="R90">
+<element name="C12" library="rcl" package="C1206K" value="10 uF 50v" x="8.69" y="-6" smashed="yes" rot="R90">
 <attribute name="VALUE" x="10.79" y="-7.6" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="C13" library="rcl" package="C1206K" value="10" x="6.59" y="-6" smashed="yes" rot="R90">
+<element name="C13" library="rcl" package="C1206K" value="10 uF 50v" x="6.59" y="-6" smashed="yes" rot="R90">
 <attribute name="VALUE" x="8.69" y="-7.6" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="C14" library="rcl" package="C1206K" value="10" x="2.57" y="-5.85" smashed="yes" rot="R90">
+<element name="C14" library="rcl" package="C1206K" value="10 uF 50v" x="2.57" y="-5.85" smashed="yes" rot="R90">
 <attribute name="VALUE" x="4.67" y="-7.45" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="C15" library="rcl" package="C1206K" value="10" x="-17.25" y="-5.55" smashed="yes" rot="R90">
+<element name="C15" library="rcl" package="C1206K" value="10 uF 50v" x="-17.25" y="-5.55" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-15.15" y="-7.15" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="C16" library="rcl" package="C1206K" value="10" x="13.81" y="-4.35" smashed="yes" rot="R180">
+<element name="C16" library="rcl" package="C1206K" value="10 uF 50v" x="13.81" y="-4.35" smashed="yes" rot="R180">
 <attribute name="VALUE" x="15.41" y="-2.25" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="C17" library="rcl" package="C1206K" value=".1 uF" x="-15.52" y="2.08" smashed="yes" rot="R180">
+<element name="C17" library="rcl" package="C1206K" value="10 uF 50v" x="-15.52" y="2.08" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-14.52" y="3.98" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="C18" library="rcl" package="C0402K" value=".1 uF" x="0.9" y="-0.75" smashed="yes" rot="R180">
+<element name="C18" library="rcl" package="C0402K" value=".1 uF 10v" x="0.9" y="-0.75" smashed="yes" rot="R180">
 <attribute name="VALUE" x="1.4" y="0.7" size="1.016" layer="27" rot="R180"/>
 </element>
 <element name="U$11" library="BenLibrary" package="QFN16" value="MA700" x="0" y="0" smashed="yes" rot="MR180">
@@ -2297,40 +2306,41 @@ design rules under a new name.</description>
 <element name="YCAP3" library="rcl" package="C0402K" value="dnp" x="17.6" y="-12.96" smashed="yes" rot="R270">
 <attribute name="VALUE" x="16.15" y="-12.46" size="1.016" layer="27" rot="R270"/>
 </element>
-<element name="C20" library="rcl" package="C0603K" value="22uf" x="-6.24" y="11.52" smashed="yes" rot="R90">
+<element name="C20" library="rcl" package="C0603K" value="22 uF 10v" x="-6.24" y="11.52" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-4.59" y="10.72" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="X1" library="con-jst2" package="SM07B-SRSS-TB" value="SM07B-SRSS-TB" x="-1.76" y="16.48" smashed="yes" rot="R180">
+<element name="PROG" library="con-jst2" package="SM07B-SRSS-TB" value="SM07B-SRSS-TB" x="-1.76" y="16.48" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-8.745" y="18.385" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="U$9" library="Ben_Library" package="XT30_HORIZONTAL" value="XT30" x="17.76" y="-5.12" rot="MR90"/>
 <element name="CAN" library="con-molex-spox" package="5267-3" value="5267-3" x="24.4" y="4" smashed="yes" rot="MR90">
 <attribute name="NAME" x="19.74" y="4.46" size="1.27" layer="22" rot="MR90"/>
 </element>
-<element name="C21" library="rcl" package="C1206K" value="10" x="27.25" y="-4" smashed="yes">
+<element name="C21" library="rcl" package="C1206K" value="10 uF 50v" x="27.25" y="-4" smashed="yes">
 <attribute name="VALUE" x="25.65" y="-6.1" size="1.016" layer="27"/>
 </element>
-<element name="C22" library="rcl" package="C1206K" value="10" x="22.25" y="-1.75" smashed="yes" rot="R180">
+<element name="C22" library="rcl" package="C1206K" value="10 uF 50v" x="22.25" y="-1.75" smashed="yes" rot="R180">
 <attribute name="VALUE" x="23.85" y="0.35" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="C23" library="rcl" package="C1206K" value="10" x="22.25" y="-4" smashed="yes" rot="R180">
+<element name="C23" library="rcl" package="C1206K" value="10 uF 50v" x="22.25" y="-4" smashed="yes" rot="R180">
 <attribute name="VALUE" x="23.85" y="-1.9" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="C24" library="rcl" package="C1206K" value="10" x="22.25" y="-6.25" smashed="yes" rot="R180">
+<element name="C24" library="rcl" package="C1206K" value="10 uF 50v" x="22.25" y="-6.25" smashed="yes" rot="R180">
 <attribute name="VALUE" x="23.85" y="-4.15" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="C25" library="rcl" package="C1206K" value="10" x="22.25" y="-8.5" smashed="yes" rot="R180">
+<element name="C25" library="rcl" package="C1206K" value="10 uF 50v" x="22.25" y="-8.5" smashed="yes" rot="R180">
 <attribute name="VALUE" x="23.85" y="-6.4" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="C26" library="rcl" package="C1206K" value="10" x="27.25" y="-1.75" smashed="yes">
+<element name="C26" library="rcl" package="C1206K" value="10 uF 50v" x="27.25" y="-1.75" smashed="yes">
 <attribute name="VALUE" x="25.65" y="-3.85" size="1.016" layer="27"/>
 </element>
-<element name="C28" library="rcl" package="C1206K" value="10" x="27.25" y="-6.25" smashed="yes">
+<element name="C28" library="rcl" package="C1206K" value="10 uF 50v" x="27.25" y="-6.25" smashed="yes">
 <attribute name="VALUE" x="25.65" y="-8.35" size="1.016" layer="27"/>
 </element>
-<element name="C29" library="rcl" package="C1206K" value="10" x="27.25" y="-8.5" smashed="yes">
+<element name="C29" library="rcl" package="C1206K" value="10 uF 50v" x="27.25" y="-8.5" smashed="yes">
 <attribute name="VALUE" x="25.65" y="-10.6" size="1.016" layer="27"/>
 </element>
+<element name="U$7" library="con-molex-c-grid" package="901481103" value="901481103" x="26.25" y="6.6" rot="R90"/>
 </elements>
 <signals>
 <signal name="GHA">
@@ -2487,8 +2497,8 @@ design rules under a new name.</description>
 <contactref element="C33" pad="2"/>
 <contactref element="U$6" pad="9"/>
 <contactref element="U$6" pad="2"/>
-<contactref element="U$7" pad="4"/>
-<contactref element="U$7" pad="EXP"/>
+<contactref element="LDFM33PUR" pad="4"/>
+<contactref element="LDFM33PUR" pad="EXP"/>
 <contactref element="MC1" pad="2"/>
 <contactref element="C19" pad="2"/>
 <polygon width="0.16" layer="3" isolate="0.254" thermals="no">
@@ -2767,7 +2777,7 @@ design rules under a new name.</description>
 <wire x1="17.04" y1="3.9" x2="17.04" y2="3.86" width="0.16" layer="1"/>
 <wire x1="17.16" y1="8.35" x2="16.15" y2="8.35" width="0.16" layer="1"/>
 <wire x1="16.15" y1="8.35" x2="16.12" y2="8.38" width="0.16" layer="1"/>
-<wire x1="15.95" y1="12.31" x2="15.95" y2="13.43" width="0.16" layer="1"/>
+<wire x1="15.95" y1="12.26" x2="15.95" y2="13.43" width="0.16" layer="1"/>
 <wire x1="15.95" y1="13.43" x2="15.86" y2="13.52" width="0.16" layer="1"/>
 <wire x1="9.38" y1="0.36" x2="9.11" y2="0.36" width="0.16" layer="1"/>
 <wire x1="9.11" y1="0.36" x2="7.88" y2="-0.39" width="0.16" layer="1"/>
@@ -2809,7 +2819,7 @@ design rules under a new name.</description>
 <wire x1="0.21" y1="3.74" x2="-0.67" y2="3.79" width="0.16" layer="1"/>
 <wire x1="-10.3" y1="10.91" x2="-10.56" y2="10.21" width="0.3048" layer="1"/>
 <wire x1="-11.85" y1="11.2" x2="-13.02" y2="11.2" width="0.4064" layer="1"/>
-<wire x1="-13.02" y1="11.2" x2="-13.02" y2="10.84" width="0.4064" layer="1"/>
+<wire x1="-13.02" y1="11.2" x2="-13.02" y2="10.79" width="0.4064" layer="1"/>
 <wire x1="-11.85" y1="11.2" x2="-10.4" y2="11.2" width="0.4064" layer="1"/>
 <wire x1="-10.4" y1="11.2" x2="-10.4" y2="10.2" width="0.4064" layer="1"/>
 <wire x1="11.78" y1="2.79" x2="11.78" y2="1.44" width="0.16" layer="1"/>
@@ -2825,7 +2835,7 @@ design rules under a new name.</description>
 <wire x1="-6.385" y1="12.405" x2="-7.56" y2="12.405" width="0.16" layer="1"/>
 <wire x1="-7.56" y1="12.405" x2="-8.555" y2="12.405" width="0.16" layer="1"/>
 <wire x1="-8.555" y1="12.405" x2="-8.59" y2="12.37" width="0.16" layer="1"/>
-<contactref element="X1" pad="3"/>
+<contactref element="PROG" pad="3"/>
 <wire x1="-0.76" y1="13.505" x2="-0.8" y2="13.505" width="0.16" layer="1"/>
 <wire x1="-0.8" y1="13.505" x2="-0.8" y2="14.72" width="0.16" layer="1"/>
 <via x="-0.8" y="14.72" extent="1-16" drill="0.3"/>
@@ -2890,6 +2900,11 @@ design rules under a new name.</description>
 <via x="27.75" y="-2.3" extent="1-16" drill="0.3"/>
 <via x="27.75" y="-3.5" extent="1-16" drill="0.3"/>
 <via x="27.75" y="-4.7" extent="1-16" drill="0.3"/>
+<contactref element="U$7" pad="P$4"/>
+<contactref element="U$7" pad="P$3"/>
+<wire x1="22.44" y1="9.14" x2="24.4" y2="9.14" width="0.16" layer="1"/>
+<wire x1="30.06" y1="9.14" x2="24.4" y2="9.14" width="0.16" layer="1"/>
+<wire x1="24.4" y1="9.14" x2="24.4" y2="9" width="0.16" layer="1"/>
 <wire x1="-17.25" y1="12.1" x2="-17.145" y2="12.09" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.86" y1="2.9" x2="-6.81" y2="2.85" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.24" y1="12.395" x2="-6.385" y2="12.405" width="0" layer="19" extent="1-1"/>
@@ -3768,7 +3783,7 @@ design rules under a new name.</description>
 <vertex x="19" y="19"/>
 <vertex x="-19" y="19"/>
 </polygon>
-<contactref element="U$7" pad="1"/>
+<contactref element="LDFM33PUR" pad="1"/>
 <contactref element="C19" pad="1"/>
 <contactref element="U$1" pad="26"/>
 <contactref element="VREFCAP" pad="1"/>
@@ -3842,7 +3857,7 @@ design rules under a new name.</description>
 <contactref element="C20" pad="1"/>
 <wire x1="-6.24" y1="10.645" x2="-7.55" y2="10.645" width="0.16" layer="1"/>
 <wire x1="-7.55" y1="10.645" x2="-7.56" y2="10.655" width="0.16" layer="1"/>
-<contactref element="X1" pad="1"/>
+<contactref element="PROG" pad="1"/>
 <wire x1="1.24" y1="13.505" x2="1.92" y2="13.505" width="0.16" layer="1"/>
 <wire x1="1.92" y1="13.505" x2="1.92" y2="13.6" width="0.16" layer="1"/>
 <via x="1.92" y="13.6" extent="1-16" drill="0.3"/>
@@ -3879,7 +3894,7 @@ design rules under a new name.</description>
 <wire x1="9.89" y1="17.12" x2="-1.98" y2="17.12" width="0.16" layer="16"/>
 <wire x1="-1.98" y1="17.12" x2="-3.83" y2="15.27" width="0.16" layer="16"/>
 <wire x1="9.89" y1="17.12" x2="13.81" y2="13.2" width="0.16" layer="16"/>
-<contactref element="X1" pad="6"/>
+<contactref element="PROG" pad="6"/>
 <wire x1="-3.76" y1="13.505" x2="-3.83" y2="13.505" width="0.16" layer="1"/>
 <wire x1="-3.83" y1="13.505" x2="-3.83" y2="15.27" width="0.16" layer="1"/>
 </signal>
@@ -3892,13 +3907,13 @@ design rules under a new name.</description>
 <via x="13.12" y="15.36" extent="1-16" drill="0.3"/>
 <wire x1="13.12" y1="15.36" x2="13.12" y2="15.13" width="0.16" layer="1"/>
 <wire x1="13.12" y1="15.13" x2="12.28" y2="14.29" width="0.16" layer="1"/>
-<contactref element="X1" pad="7"/>
+<contactref element="PROG" pad="7"/>
 <wire x1="-4.76" y1="13.505" x2="-4.77" y2="13.505" width="0.16" layer="1"/>
 <wire x1="-4.77" y1="13.505" x2="-4.77" y2="15.31" width="0.16" layer="1"/>
 </signal>
 <signal name="NRST">
 <contactref element="U$3" pad="7"/>
-<contactref element="X1" pad="5"/>
+<contactref element="PROG" pad="5"/>
 <wire x1="14.28" y1="7.79" x2="13.23" y2="7.79" width="0.16" layer="1"/>
 <wire x1="13.23" y1="7.79" x2="12.96" y2="7.52" width="0.16" layer="1"/>
 <via x="12.96" y="7.52" extent="1-16" drill="0.3"/>
@@ -3923,7 +3938,7 @@ design rules under a new name.</description>
 <wire x1="4.77" y1="10.2" x2="6.12" y2="8.85" width="0.16" layer="1"/>
 <wire x1="6.12" y1="8.85" x2="6.12" y2="6.45" width="0.16" layer="1"/>
 <wire x1="0.73" y1="10.2" x2="-1.67" y2="12.6" width="0.16" layer="16"/>
-<contactref element="X1" pad="4"/>
+<contactref element="PROG" pad="4"/>
 <wire x1="-1.67" y1="12.6" x2="-1.76" y2="12.6" width="0.16" layer="1"/>
 <wire x1="-1.76" y1="12.6" x2="-1.76" y2="13.505" width="0.16" layer="1"/>
 </signal>
@@ -3937,7 +3952,7 @@ design rules under a new name.</description>
 <via x="0.33" y="12.6" extent="1-16" drill="0.3"/>
 <wire x1="4.92" y1="10.8" x2="2.13" y2="10.8" width="0.16" layer="16"/>
 <wire x1="2.13" y1="10.8" x2="0.33" y2="12.6" width="0.16" layer="16"/>
-<contactref element="X1" pad="2"/>
+<contactref element="PROG" pad="2"/>
 <wire x1="0.33" y1="12.6" x2="0.24" y2="12.6" width="0.16" layer="1"/>
 <wire x1="0.24" y1="12.6" x2="0.24" y2="13.505" width="0.16" layer="1"/>
 </signal>
@@ -3951,10 +3966,10 @@ design rules under a new name.</description>
 <contactref element="CHOKE" pad="2"/>
 <contactref element="U$3" pad="13"/>
 <contactref element="C41" pad="1"/>
-<wire x1="15.95" y1="11.01" x2="17.07" y2="11.01" width="0.16" layer="1"/>
+<wire x1="15.95" y1="11.06" x2="17.07" y2="11.01" width="0.16" layer="1"/>
 <wire x1="17.07" y1="11.01" x2="17.21" y2="11.15" width="0.16" layer="1"/>
 <wire x1="14.28" y1="10.79" x2="15.73" y2="10.79" width="0.16" layer="1"/>
-<wire x1="15.73" y1="10.79" x2="15.95" y2="11.01" width="0.16" layer="1"/>
+<wire x1="15.73" y1="10.79" x2="15.95" y2="11.06" width="0.16" layer="1"/>
 </signal>
 <signal name="CS">
 <contactref element="U$3" pad="50"/>
@@ -4085,8 +4100,8 @@ design rules under a new name.</description>
 <signal name="5V">
 <contactref element="C34" pad="1"/>
 <contactref element="U$6" pad="3"/>
-<contactref element="U$7" pad="6"/>
-<contactref element="U$7" pad="5"/>
+<contactref element="LDFM33PUR" pad="6"/>
+<contactref element="LDFM33PUR" pad="5"/>
 <contactref element="MC1" pad="1"/>
 <contactref element="L1" pad="1"/>
 <contactref element="C3" pad="1"/>
@@ -4120,10 +4135,10 @@ design rules under a new name.</description>
 <wire x1="5.09" y1="-1.15" x2="5.06" y2="-1.15" width="0.16" layer="1"/>
 <wire x1="4.64" y1="1.2" x2="4.64" y2="-0.79" width="0.16" layer="16"/>
 <wire x1="4.64" y1="-0.79" x2="5.27" y2="-1.42" width="0.16" layer="16"/>
-<wire x1="-13.02" y1="9.54" x2="-14.85" y2="9.54" width="0.4064" layer="1"/>
+<wire x1="-13.02" y1="9.59" x2="-14.85" y2="9.54" width="0.4064" layer="1"/>
 <wire x1="-14.85" y1="9.54" x2="-14.85" y2="10" width="0.4064" layer="1"/>
 <wire x1="-11.85" y1="9.2" x2="-13.02" y2="9.2" width="0.4064" layer="1"/>
-<wire x1="-13.02" y1="9.2" x2="-13.02" y2="9.54" width="0.4064" layer="1"/>
+<wire x1="-13.02" y1="9.2" x2="-13.02" y2="9.59" width="0.4064" layer="1"/>
 </signal>
 <signal name="CANH">
 <contactref element="U$6" pad="7"/>
@@ -4133,6 +4148,11 @@ design rules under a new name.</description>
 <wire x1="21.75" y1="6.5" x2="15.5" y2="0.25" width="0.16" layer="1"/>
 <wire x1="15.5" y1="0.25" x2="12.1" y2="0.25" width="0.16" layer="1"/>
 <wire x1="12.1" y1="0.25" x2="11.71" y2="-0.14" width="0.16" layer="1"/>
+<contactref element="U$7" pad="P$2"/>
+<contactref element="U$7" pad="P$5"/>
+<wire x1="22.44" y1="6.6" x2="24.4" y2="6.6" width="0.16" layer="1"/>
+<wire x1="30.06" y1="6.6" x2="24.4" y2="6.6" width="0.16" layer="1"/>
+<wire x1="24.4" y1="6.6" x2="24.4" y2="6.5" width="0.16" layer="1"/>
 </signal>
 <signal name="CANL">
 <contactref element="U$6" pad="6"/>
@@ -4142,6 +4162,14 @@ design rules under a new name.</description>
 <wire x1="24.4" y1="4" x2="19.75" y2="4" width="0.16" layer="1"/>
 <wire x1="19.75" y1="4" x2="15.5" y2="-0.25" width="0.16" layer="1"/>
 <wire x1="15.5" y1="-0.25" x2="12.2" y2="-0.25" width="0.16" layer="1"/>
+<wire x1="24.4" y1="4" x2="24.15" y2="4" width="0.16" layer="1"/>
+<wire x1="24.15" y1="4" x2="24.15" y2="3.9" width="0.16" layer="1"/>
+<wire x1="24.15" y1="3.9" x2="22.59" y2="3.9" width="0.16" layer="1"/>
+<contactref element="U$7" pad="P$1"/>
+<contactref element="U$7" pad="P$6"/>
+<wire x1="22.44" y1="4.06" x2="24.4" y2="4.06" width="0.16" layer="1"/>
+<wire x1="30.06" y1="4.06" x2="24.4" y2="4.06" width="0.16" layer="1"/>
+<wire x1="24.4" y1="4.06" x2="24.4" y2="4" width="0.16" layer="1"/>
 </signal>
 <signal name="SPA">
 <contactref element="Q2" pad="1"/>

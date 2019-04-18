@@ -10222,6 +10222,78 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="-4" y1="5.5" x2="-2" y2="5.5" width="0.127" layer="21"/>
 <wire x1="2" y1="5.5" x2="3" y2="5.5" width="0.127" layer="21"/>
 </package>
+<package name="M80-8430342">
+<pad name="2" x="0" y="0" drill="0.8"/>
+<pad name="1" x="2" y="0" drill="0.8"/>
+<pad name="3" x="-2" y="0" drill="0.8"/>
+<pad name="P$4" x="4.25" y="-0.5" drill="0.9"/>
+<pad name="P$5" x="-4.25" y="-0.5" drill="0.9"/>
+<pad name="P$6" x="-4.25" y="-5.25" drill="0.9"/>
+<pad name="P$7" x="4.25" y="-5.25" drill="0.9"/>
+<wire x1="-3.81" y1="-6.15" x2="3.81" y2="-6.15" width="0.127" layer="21"/>
+<wire x1="-5" y1="-6" x2="-5" y2="-7" width="0.127" layer="21"/>
+<wire x1="-5" y1="-7" x2="-4" y2="-9" width="0.127" layer="21"/>
+<wire x1="-4" y1="-9" x2="-5" y2="-10" width="0.127" layer="21"/>
+<wire x1="5" y1="-6" x2="5" y2="-7" width="0.127" layer="21"/>
+<wire x1="5" y1="-7" x2="4" y2="-9" width="0.127" layer="21"/>
+<wire x1="4" y1="-9" x2="5" y2="-10" width="0.127" layer="21"/>
+<wire x1="-5" y1="-1" x2="-5" y2="-5" width="0.127" layer="21"/>
+<wire x1="5" y1="-1" x2="5" y2="-5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1" x2="3" y2="-1" width="0.127" layer="21"/>
+</package>
+<package name="XT30_H_F">
+<pad name="+" x="2.5" y="0.15" drill="1.7"/>
+<pad name="-" x="-2.5" y="0.15" drill="1.7"/>
+<pad name="P$3" x="5.5" y="5.135" drill="1"/>
+<pad name="P$4" x="-5.5" y="5.135" drill="1"/>
+<wire x1="5" y1="7.5" x2="-5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="6.15" x2="-5" y2="4.15" width="0.127" layer="21"/>
+<wire x1="-5" y1="4.15" x2="-3.5" y2="4.15" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="4.15" x2="-1.5" y2="4.15" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="4.15" x2="1.5" y2="4.15" width="0.127" layer="21"/>
+<wire x1="1.5" y1="4.15" x2="3.5" y2="4.15" width="0.127" layer="21"/>
+<wire x1="3.5" y1="4.15" x2="5" y2="4.15" width="0.127" layer="21"/>
+<wire x1="5" y1="6.15" x2="5" y2="4.15" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="4.15" x2="-3.5" y2="2.65" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="2.65" x2="-3.5" y2="1.15" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="4.15" x2="-1.5" y2="2.65" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2.65" x2="-1.5" y2="1.15" width="0.127" layer="21"/>
+<wire x1="1.5" y1="4.15" x2="1.5" y2="2.65" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2.65" x2="1.5" y2="1.15" width="0.127" layer="21"/>
+<wire x1="3.5" y1="4.15" x2="3.5" y2="2.65" width="0.127" layer="21"/>
+<wire x1="3.5" y1="2.65" x2="3.5" y2="1.15" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2.65" x2="3.5" y2="2.65" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="2.65" x2="-1.5" y2="2.65" width="0.127" layer="21"/>
+<wire x1="-5" y1="6.15" x2="-6" y2="6.15" width="0.127" layer="21"/>
+<wire x1="-5" y1="4.15" x2="-6" y2="4.15" width="0.127" layer="21"/>
+<wire x1="5" y1="6.15" x2="6" y2="6.15" width="0.127" layer="21"/>
+<wire x1="5" y1="4.15" x2="6" y2="4.15" width="0.127" layer="21"/>
+<wire x1="2.08" y1="6.65" x2="2.08" y2="4.65" width="0.127" layer="21"/>
+<wire x1="1.08" y1="5.65" x2="3.08" y2="5.65" width="0.127" layer="21"/>
+<wire x1="-3.08" y1="5.65" x2="-2.08" y2="5.65" width="0.127" layer="21"/>
+<wire x1="-5" y1="6.15" x2="-5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="5" y1="6.15" x2="5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="7.5" x2="-4.4" y2="14.15" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="14.15" x2="-2.5" y2="14.15" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="14.15" x2="4.4" y2="14.15" width="0.127" layer="21"/>
+<wire x1="4.4" y1="14.15" x2="4.4" y2="7.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="14.15" x2="-2.5" y2="7.5" width="0.127" layer="21"/>
+</package>
+<package name="M80-8820342">
+<pad name="P$1" x="0" y="0" drill="0.7"/>
+<pad name="P$2" x="2" y="0" drill="0.7"/>
+<pad name="P$3" x="-2" y="0" drill="0.7"/>
+<pad name="P$4" x="4.25" y="2.375" drill="0.95"/>
+<pad name="P$5" x="4.25" y="-2.375" drill="0.95"/>
+<pad name="P$6" x="-4.25" y="2.375" drill="0.95"/>
+<pad name="P$7" x="-4.25" y="-2.375" drill="0.95"/>
+<wire x1="-3.81" y1="1.27" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="3.81" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="XT30">
@@ -10233,6 +10305,15 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="15.24" y1="-2.54" x2="15.24" y2="5.08" width="0.254" layer="94"/>
 <wire x1="15.24" y1="5.08" x2="12.7" y2="7.62" width="0.254" layer="94"/>
 <wire x1="12.7" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="3-PIN-CON">
+<pin name="P$1" x="-5.08" y="2.54" length="middle"/>
+<pin name="P$2" x="-5.08" y="0" length="middle"/>
+<pin name="P$3" x="-5.08" y="-2.54" length="middle"/>
+<wire x1="0" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10250,53 +10331,37 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <technology name=""/>
 </technologies>
 </device>
+<device name="FEMALW" package="XT30_H_F">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
-</devicesets>
-</library>
-<library name="con-molex-spox">
-<description>&lt;b&gt;MOLEX SPOX 5267 series PCB Headers&lt;/b&gt; &lt;p&gt;
-- vertical&lt;br&gt;
-- 2.5 mm pitch&lt;br&gt;
-- mates with 5264 series crimp housing and 42219 series IDT receptable housing</description>
-<packages>
-<package name="5267-3">
-<pad name="P$1" x="0" y="0" drill="0.8" shape="long" rot="R90"/>
-<pad name="P$2" x="2.5" y="0" drill="0.8" shape="long" rot="R90"/>
-<pad name="P$3" x="5" y="0" drill="0.8" shape="long" rot="R90"/>
-<wire x1="7.45" y1="1.8" x2="-0.9" y2="1.8" width="0.127" layer="21"/>
-<wire x1="-2.45" y1="0.2" x2="-2.45" y2="-3.1" width="0.127" layer="21"/>
-<wire x1="0.75" y1="1.75" x2="1.25" y2="1.25" width="0.127" layer="21"/>
-<wire x1="1.25" y1="1.25" x2="1.75" y2="1.75" width="0.127" layer="21"/>
-<wire x1="3.25" y1="1.75" x2="3.75" y2="1.25" width="0.127" layer="21"/>
-<wire x1="3.75" y1="1.25" x2="4.25" y2="1.75" width="0.127" layer="21"/>
-<wire x1="-2.45" y1="0.25" x2="-0.9" y2="1.8" width="0.127" layer="21"/>
-<wire x1="-2.45" y1="-3.1" x2="7.45" y2="-3.1" width="0.127" layer="21"/>
-<wire x1="7.45" y1="-3.1" x2="7.45" y2="1.8" width="0.127" layer="21"/>
-<text x="-2.54" y="2.54" size="1.27" layer="21">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.27" layer="21">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="5267-3">
-<text x="0" y="-5.48" size="1.27" layer="94">&gt;VALUE</text>
-<pin name="-1" x="0" y="2.54" visible="pin" length="middle" swaplevel="1"/>
-<pin name="-2" x="0" y="0" visible="pin" length="middle" swaplevel="1"/>
-<pin name="-3" x="0" y="-2.54" visible="pin" length="middle" swaplevel="1"/>
-<text x="0" y="5.16" size="1.27" layer="94">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="5267-3" prefix="J">
+<deviceset name="3-PIN">
 <gates>
-<gate name="G$1" symbol="5267-3" x="0" y="0" swaplevel="1"/>
+<gate name="G$1" symbol="3-PIN-CON" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="5267-3">
+<device name="" package="M80-8430342">
 <connects>
-<connect gate="G$1" pin="-1" pad="P$1"/>
-<connect gate="G$1" pin="-2" pad="P$2"/>
-<connect gate="G$1" pin="-3" pad="P$3"/>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2" package="M80-8820342">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10398,7 +10463,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="C20" library="rcl" deviceset="C-US" device="C0603K" value="22 uF 10v"/>
 <part name="PROG" library="con-jst2" deviceset="?M07B-SRSS-TB" device="S"/>
 <part name="U$9" library="Ben_Library" deviceset="XT30" device=""/>
-<part name="CAN" library="con-molex-spox" deviceset="5267-3" device=""/>
 <part name="C21" library="rcl" deviceset="C-US" device="C1206K" value="10 uF 50v"/>
 <part name="C22" library="rcl" deviceset="C-US" device="C1206K" value="10 uF 50v"/>
 <part name="C23" library="rcl" deviceset="C-US" device="C1206K" value="10 uF 50v"/>
@@ -10407,6 +10471,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="C26" library="rcl" deviceset="C-US" device="C1206K" value="10 uF 50v"/>
 <part name="C28" library="rcl" deviceset="C-US" device="C1206K" value="10 uF 50v"/>
 <part name="C29" library="rcl" deviceset="C-US" device="C1206K" value="10 uF 50v"/>
+<part name="U$8" library="Ben_Library" deviceset="3-PIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10525,7 +10590,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <instance part="PROG" gate="-6" x="43.18" y="-40.64"/>
 <instance part="PROG" gate="-7" x="43.18" y="-43.18"/>
 <instance part="U$9" gate="G$1" x="88.9" y="-60.96"/>
-<instance part="CAN" gate="G$1" x="81.28" y="-40.64"/>
 <instance part="C21" gate="G$1" x="391.16" y="124.46"/>
 <instance part="C22" gate="G$1" x="396.24" y="124.46"/>
 <instance part="C23" gate="G$1" x="401.32" y="124.46"/>
@@ -10534,6 +10598,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <instance part="C26" gate="G$1" x="416.56" y="124.46"/>
 <instance part="C28" gate="G$1" x="421.64" y="124.46"/>
 <instance part="C29" gate="G$1" x="426.72" y="124.46"/>
+<instance part="U$8" gate="G$1" x="81.28" y="-25.4" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -10801,9 +10866,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <label x="27.94" y="-15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="-43.18" x2="76.2" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-22.86" x2="86.36" y2="-27.94" width="0.1524" layer="91"/>
 <label x="66.04" y="-45.72" size="1.778" layer="95"/>
-<pinref part="CAN" gate="G$1" pin="-3"/>
+<pinref part="U$8" gate="G$1" pin="P$3"/>
 </segment>
 <segment>
 <pinref part="LDFM33PUR" gate="G$1" pin="GND"/>
@@ -11683,9 +11748,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pinref part="U$6" gate="G$1" pin="CANH"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="-40.64" x2="76.2" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-20.32" x2="86.36" y2="-25.4" width="0.1524" layer="91"/>
 <label x="68.58" y="-40.64" size="1.778" layer="95"/>
-<pinref part="CAN" gate="G$1" pin="-2"/>
+<pinref part="U$8" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -11696,9 +11761,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <label x="215.9" y="-40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="-38.1" x2="76.2" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-17.78" x2="86.36" y2="-22.86" width="0.1524" layer="91"/>
 <label x="68.58" y="-38.1" size="1.778" layer="95"/>
-<pinref part="CAN" gate="G$1" pin="-1"/>
+<pinref part="U$8" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="SPA" class="0">

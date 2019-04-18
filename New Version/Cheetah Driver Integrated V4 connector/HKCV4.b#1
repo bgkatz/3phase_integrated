@@ -33,7 +33,7 @@
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
@@ -1897,29 +1897,24 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="-4" y1="5.5" x2="-2" y2="5.5" width="0.127" layer="21"/>
 <wire x1="2" y1="5.5" x2="3" y2="5.5" width="0.127" layer="21"/>
 </package>
-</packages>
-</library>
-<library name="con-molex-spox">
-<description>&lt;b&gt;MOLEX SPOX 5267 series PCB Headers&lt;/b&gt; &lt;p&gt;
-- vertical&lt;br&gt;
-- 2.5 mm pitch&lt;br&gt;
-- mates with 5264 series crimp housing and 42219 series IDT receptable housing</description>
-<packages>
-<package name="5267-3">
-<pad name="P$1" x="0" y="0" drill="0.8" shape="long" rot="R90"/>
-<pad name="P$2" x="2.5" y="0" drill="0.8" shape="long" rot="R90"/>
-<pad name="P$3" x="5" y="0" drill="0.8" shape="long" rot="R90"/>
-<wire x1="7.45" y1="1.8" x2="-0.9" y2="1.8" width="0.127" layer="21"/>
-<wire x1="-2.45" y1="0.2" x2="-2.45" y2="-3.1" width="0.127" layer="21"/>
-<wire x1="0.75" y1="1.75" x2="1.25" y2="1.25" width="0.127" layer="21"/>
-<wire x1="1.25" y1="1.25" x2="1.75" y2="1.75" width="0.127" layer="21"/>
-<wire x1="3.25" y1="1.75" x2="3.75" y2="1.25" width="0.127" layer="21"/>
-<wire x1="3.75" y1="1.25" x2="4.25" y2="1.75" width="0.127" layer="21"/>
-<wire x1="-2.45" y1="0.25" x2="-0.9" y2="1.8" width="0.127" layer="21"/>
-<wire x1="-2.45" y1="-3.1" x2="7.45" y2="-3.1" width="0.127" layer="21"/>
-<wire x1="7.45" y1="-3.1" x2="7.45" y2="1.8" width="0.127" layer="21"/>
-<text x="-2.54" y="2.54" size="1.27" layer="21">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.27" layer="21">&gt;VALUE</text>
+<package name="M80-8430342">
+<pad name="2" x="0" y="0" drill="0.8"/>
+<pad name="1" x="2" y="0" drill="0.8"/>
+<pad name="3" x="-2" y="0" drill="0.8"/>
+<pad name="P$4" x="4.25" y="-0.5" drill="0.9"/>
+<pad name="P$5" x="-4.25" y="-0.5" drill="0.9"/>
+<pad name="P$6" x="-4.25" y="-5.25" drill="0.9"/>
+<pad name="P$7" x="4.25" y="-5.25" drill="0.9"/>
+<wire x1="-3.81" y1="-6.15" x2="3.81" y2="-6.15" width="0.127" layer="21"/>
+<wire x1="-5" y1="-6" x2="-5" y2="-7" width="0.127" layer="21"/>
+<wire x1="-5" y1="-7" x2="-4" y2="-9" width="0.127" layer="21"/>
+<wire x1="-4" y1="-9" x2="-5" y2="-10" width="0.127" layer="21"/>
+<wire x1="5" y1="-6" x2="5" y2="-7" width="0.127" layer="21"/>
+<wire x1="5" y1="-7" x2="4" y2="-9" width="0.127" layer="21"/>
+<wire x1="4" y1="-9" x2="5" y2="-10" width="0.127" layer="21"/>
+<wire x1="-5" y1="-1" x2="-5" y2="-5" width="0.127" layer="21"/>
+<wire x1="5" y1="-1" x2="5" y2="-5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1" x2="3" y2="-1" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -2288,9 +2283,6 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="-8.745" y="18.385" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="U$9" library="Ben_Library" package="XT30_HORIZONTAL" value="XT30" x="17.76" y="-5.12" rot="MR90"/>
-<element name="CAN" library="con-molex-spox" package="5267-3" value="5267-3" x="24.4" y="4" smashed="yes" rot="MR90">
-<attribute name="NAME" x="19.74" y="4.46" size="1.27" layer="22" rot="MR90"/>
-</element>
 <element name="C21" library="rcl" package="C1206K" value="10 uF 50v" x="27.25" y="-4" smashed="yes">
 <attribute name="VALUE" x="25.65" y="-6.1" size="1.016" layer="27"/>
 </element>
@@ -2315,6 +2307,7 @@ design rules under a new name.</description>
 <element name="C29" library="rcl" package="C1206K" value="10 uF 50v" x="27.25" y="-8.5" smashed="yes">
 <attribute name="VALUE" x="25.65" y="-10.6" size="1.016" layer="27"/>
 </element>
+<element name="U$8" library="Ben_Library" package="M80-8430342" value="3-PIN" x="24.6" y="6.45" rot="MR270"/>
 </elements>
 <signals>
 <signal name="GHA">
@@ -2815,7 +2808,6 @@ design rules under a new name.</description>
 <via x="-0.8" y="14.72" extent="1-16" drill="0.3"/>
 <wire x1="-0.76" y1="13.505" x2="-0.887" y2="13.505" width="0.16" layer="1"/>
 <wire x1="-0.887" y1="13.505" x2="-0.887" y2="11.41" width="0.16" layer="1"/>
-<contactref element="CAN" pad="P$3"/>
 <contactref element="U$9" pad="-"/>
 <polygon width="0.254" layer="16" isolate="0.254" thermals="no" rank="2">
 <vertex x="-18.25" y="-3.5"/>
@@ -2846,8 +2838,6 @@ design rules under a new name.</description>
 <vertex x="12" y="-3.25"/>
 <vertex x="14" y="-1"/>
 </polygon>
-<wire x1="24.4" y1="9" x2="23.5" y2="9" width="0.16" layer="3"/>
-<wire x1="23.5" y1="9" x2="18.5" y2="4" width="0.16" layer="3"/>
 <contactref element="C21" pad="2"/>
 <contactref element="C22" pad="2"/>
 <contactref element="C23" pad="2"/>
@@ -2874,6 +2864,9 @@ design rules under a new name.</description>
 <via x="27.75" y="-2.3" extent="1-16" drill="0.3"/>
 <via x="27.75" y="-3.5" extent="1-16" drill="0.3"/>
 <via x="27.75" y="-4.7" extent="1-16" drill="0.3"/>
+<contactref element="U$8" pad="3"/>
+<wire x1="24.6" y1="8.45" x2="18.8" y2="8.45" width="0.16" layer="3"/>
+<wire x1="18.8" y1="8.45" x2="18.6" y2="8.25" width="0.16" layer="3"/>
 <wire x1="-17.25" y1="12.1" x2="-17.145" y2="12.09" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.86" y1="2.9" x2="-6.81" y2="2.85" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.24" y1="12.395" x2="-6.385" y2="12.405" width="0" layer="19" extent="1-1"/>
@@ -4112,20 +4105,22 @@ design rules under a new name.</description>
 <signal name="CANH">
 <contactref element="U$6" pad="7"/>
 <wire x1="9.38" y1="-0.14" x2="11.71" y2="-0.14" width="0.16" layer="1"/>
-<contactref element="CAN" pad="P$2"/>
-<wire x1="24.4" y1="6.5" x2="21.75" y2="6.5" width="0.16" layer="1"/>
 <wire x1="21.75" y1="6.5" x2="15.5" y2="0.25" width="0.16" layer="1"/>
 <wire x1="15.5" y1="0.25" x2="12.1" y2="0.25" width="0.16" layer="1"/>
 <wire x1="12.1" y1="0.25" x2="11.71" y2="-0.14" width="0.16" layer="1"/>
+<contactref element="U$8" pad="2"/>
+<wire x1="21.75" y1="6.5" x2="24.25" y2="6.5" width="0.16" layer="1"/>
+<wire x1="24.25" y1="6.5" x2="24.6" y2="6.45" width="0.16" layer="1"/>
 </signal>
 <signal name="CANL">
 <contactref element="U$6" pad="6"/>
 <wire x1="9.38" y1="-0.64" x2="11.81" y2="-0.64" width="0.16" layer="1"/>
 <wire x1="11.81" y1="-0.64" x2="12.2" y2="-0.25" width="0.16" layer="1"/>
-<contactref element="CAN" pad="P$1"/>
-<wire x1="24.4" y1="4" x2="19.75" y2="4" width="0.16" layer="1"/>
+<wire x1="23.85" y1="4" x2="19.75" y2="4" width="0.16" layer="1"/>
 <wire x1="19.75" y1="4" x2="15.5" y2="-0.25" width="0.16" layer="1"/>
 <wire x1="15.5" y1="-0.25" x2="12.2" y2="-0.25" width="0.16" layer="1"/>
+<contactref element="U$8" pad="1"/>
+<wire x1="23.85" y1="4" x2="24.6" y2="4.45" width="0.16" layer="1"/>
 </signal>
 <signal name="SPA">
 <contactref element="Q2" pad="1"/>

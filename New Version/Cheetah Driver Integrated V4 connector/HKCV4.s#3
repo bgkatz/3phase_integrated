@@ -10222,6 +10222,15 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="-4" y1="5.5" x2="-2" y2="5.5" width="0.127" layer="21"/>
 <wire x1="2" y1="5.5" x2="3" y2="5.5" width="0.127" layer="21"/>
 </package>
+<package name="M80-8430342">
+<pad name="2" x="0" y="0" drill="0.8"/>
+<pad name="1" x="2" y="0" drill="0.8"/>
+<pad name="3" x="-2" y="0" drill="0.8"/>
+<pad name="P$4" x="4.25" y="-0.5" drill="0.9"/>
+<pad name="P$5" x="-4.25" y="-0.5" drill="0.9"/>
+<pad name="P$6" x="-4.25" y="-5.25" drill="0.9"/>
+<pad name="P$7" x="4.25" y="-5.25" drill="0.9"/>
+</package>
 </packages>
 <symbols>
 <symbol name="XT30">
@@ -10234,6 +10243,15 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="15.24" y1="5.08" x2="12.7" y2="7.62" width="0.254" layer="94"/>
 <wire x1="12.7" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
 </symbol>
+<symbol name="3-PIN-CON">
+<pin name="P$1" x="-5.08" y="5.08" length="middle"/>
+<pin name="P$2" x="-5.08" y="0" length="middle"/>
+<pin name="P$3" x="-5.08" y="-5.08" length="middle"/>
+<wire x1="0" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="XT30">
@@ -10245,6 +10263,23 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3-PIN">
+<gates>
+<gate name="G$1" symbol="3-PIN-CON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="M80-8430342">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10363,7 +10398,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="LED2" library="SparkFun-LED" deviceset="LED" device="0603" value="G"/>
 <part name="R22" library="rcl" deviceset="R-US_" device="R0402" value="200"/>
 <part name="XT1" library="sc_usercreated" deviceset="CSTCE" device=""/>
-<part name="C41" library="rcl" deviceset="C-US" device="C0402" value=".1 uF 10v"/>
+<part name="C41" library="rcl" deviceset="C-US" device="C0402K" value=".1 uF 10v"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="R1210" value=".001"/>
 <part name="C33" library="rcl" deviceset="C-US" device="C0402K" value=".1 uF 10v"/>
 <part name="C34" library="rcl" deviceset="C-US" device="C0402K" value=".1 uF 10v"/>
@@ -10373,12 +10408,12 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="U$2" library="BenLibrary" deviceset="18_AWG_PAD" device=""/>
 <part name="U$5" library="BenLibrary" deviceset="18_AWG_PAD" device=""/>
 <part name="U$6" library="BenLibrary" deviceset="MCP2542" device=""/>
-<part name="U$7" library="BenLibrary" deviceset="LDFM" device=""/>
+<part name="LDFM33PUR" library="BenLibrary" deviceset="LDFM" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
-<part name="MC1" library="rcl" deviceset="C-US" device="C0402" value="1 uF 10v"/>
-<part name="C19" library="rcl" deviceset="C-US" device="C0603K" value="22uF 10v"/>
+<part name="MC1" library="rcl" deviceset="C-US" device="C0402K" value="1 uF 10v"/>
+<part name="C19" library="rcl" deviceset="C-US" device="C0603K" value="22 uF 10v"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="R1210" value=".001"/>
 <part name="C1" library="rcl" deviceset="C-US" device="C1206K" value="10 uF 50v"/>
 <part name="P+4" library="supply1" deviceset="+24V" device=""/>
@@ -10396,7 +10431,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="YCAP2" library="rcl" deviceset="C-US" device="C0402K" value="dnp"/>
 <part name="YCAP3" library="rcl" deviceset="C-US" device="C0402K" value="dnp"/>
 <part name="C20" library="rcl" deviceset="C-US" device="C0603K" value="22 uF 10v"/>
-<part name="X1" library="con-jst2" deviceset="?M07B-SRSS-TB" device="S"/>
+<part name="PROG" library="con-jst2" deviceset="?M07B-SRSS-TB" device="S"/>
 <part name="U$9" library="Ben_Library" deviceset="XT30" device=""/>
 <part name="CAN" library="con-molex-spox" deviceset="5267-3" device=""/>
 <part name="C21" library="rcl" deviceset="C-US" device="C1206K" value="10 uF 50v"/>
@@ -10407,6 +10442,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="C26" library="rcl" deviceset="C-US" device="C1206K" value="10 uF 50v"/>
 <part name="C28" library="rcl" deviceset="C-US" device="C1206K" value="10 uF 50v"/>
 <part name="C29" library="rcl" deviceset="C-US" device="C1206K" value="10 uF 50v"/>
+<part name="U$8" library="Ben_Library" deviceset="3-PIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10494,7 +10530,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <instance part="U$2" gate="G$1" x="386.08" y="76.2"/>
 <instance part="U$5" gate="G$1" x="419.1" y="76.2"/>
 <instance part="U$6" gate="G$1" x="187.96" y="-30.48"/>
-<instance part="U$7" gate="G$1" x="241.3" y="33.02"/>
+<instance part="LDFM33PUR" gate="G$1" x="241.3" y="33.02"/>
 <instance part="GND9" gate="1" x="243.84" y="17.78"/>
 <instance part="SUPPLY2" gate="G$1" x="261.62" y="38.1"/>
 <instance part="P+8" gate="1" x="223.52" y="40.64"/>
@@ -10517,13 +10553,13 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <instance part="YCAP2" gate="G$1" x="180.34" y="43.18"/>
 <instance part="YCAP3" gate="G$1" x="193.04" y="43.18"/>
 <instance part="C20" gate="G$1" x="269.24" y="30.48"/>
-<instance part="X1" gate="-1" x="43.18" y="-27.94"/>
-<instance part="X1" gate="-2" x="43.18" y="-30.48"/>
-<instance part="X1" gate="-3" x="43.18" y="-33.02"/>
-<instance part="X1" gate="-4" x="43.18" y="-35.56"/>
-<instance part="X1" gate="-5" x="43.18" y="-38.1"/>
-<instance part="X1" gate="-6" x="43.18" y="-40.64"/>
-<instance part="X1" gate="-7" x="43.18" y="-43.18"/>
+<instance part="PROG" gate="-1" x="43.18" y="-27.94"/>
+<instance part="PROG" gate="-2" x="43.18" y="-30.48"/>
+<instance part="PROG" gate="-3" x="43.18" y="-33.02"/>
+<instance part="PROG" gate="-4" x="43.18" y="-35.56"/>
+<instance part="PROG" gate="-5" x="43.18" y="-38.1"/>
+<instance part="PROG" gate="-6" x="43.18" y="-40.64"/>
+<instance part="PROG" gate="-7" x="43.18" y="-43.18"/>
 <instance part="U$9" gate="G$1" x="88.9" y="-60.96"/>
 <instance part="CAN" gate="G$1" x="81.28" y="-40.64"/>
 <instance part="C21" gate="G$1" x="391.16" y="124.46"/>
@@ -10534,6 +10570,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <instance part="C26" gate="G$1" x="416.56" y="124.46"/>
 <instance part="C28" gate="G$1" x="421.64" y="124.46"/>
 <instance part="C29" gate="G$1" x="426.72" y="124.46"/>
+<instance part="U$8" gate="G$1" x="101.6" y="-38.1"/>
 </instances>
 <busses>
 </busses>
@@ -10794,19 +10831,19 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <segment>
 <wire x1="40.64" y1="-33.02" x2="33.02" y2="-33.02" width="0.1524" layer="91"/>
 <label x="25.4" y="-33.02" size="1.778" layer="95"/>
-<pinref part="X1" gate="-3" pin="S"/>
+<pinref part="PROG" gate="-3" pin="S"/>
 </segment>
 <segment>
 <wire x1="40.64" y1="-15.24" x2="35.56" y2="-15.24" width="0.1524" layer="91"/>
 <label x="27.94" y="-15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="-43.18" x2="76.2" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-43.18" x2="73.66" y2="-43.18" width="0.1524" layer="91"/>
 <label x="66.04" y="-45.72" size="1.778" layer="95"/>
 <pinref part="CAN" gate="G$1" pin="-3"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="GND"/>
+<pinref part="LDFM33PUR" gate="G$1" pin="GND"/>
 <wire x1="243.84" y1="25.4" x2="243.84" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="MC1" gate="G$1" pin="2"/>
@@ -11391,10 +11428,10 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <segment>
 <wire x1="40.64" y1="-27.94" x2="33.02" y2="-27.94" width="0.1524" layer="91"/>
 <label x="25.4" y="-27.94" size="1.778" layer="95"/>
-<pinref part="X1" gate="-1" pin="S"/>
+<pinref part="PROG" gate="-1" pin="S"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="VO"/>
+<pinref part="LDFM33PUR" gate="G$1" pin="VO"/>
 <wire x1="256.54" y1="38.1" x2="261.62" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
 <pinref part="C19" gate="G$1" pin="1"/>
@@ -11448,7 +11485,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <segment>
 <wire x1="40.64" y1="-40.64" x2="33.02" y2="-40.64" width="0.1524" layer="91"/>
 <label x="25.4" y="-40.64" size="1.778" layer="95"/>
-<pinref part="X1" gate="-6" pin="S"/>
+<pinref part="PROG" gate="-6" pin="S"/>
 </segment>
 </net>
 <net name="USART_RX" class="0">
@@ -11460,7 +11497,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <segment>
 <wire x1="40.64" y1="-43.18" x2="33.02" y2="-43.18" width="0.1524" layer="91"/>
 <label x="25.4" y="-43.18" size="1.778" layer="95"/>
-<pinref part="X1" gate="-7" pin="S"/>
+<pinref part="PROG" gate="-7" pin="S"/>
 </segment>
 </net>
 <net name="NRST" class="0">
@@ -11470,7 +11507,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <label x="50.8" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-5" pin="S"/>
+<pinref part="PROG" gate="-5" pin="S"/>
 <wire x1="40.64" y1="-38.1" x2="33.02" y2="-38.1" width="0.1524" layer="91"/>
 <label x="25.4" y="-38.1" size="1.778" layer="95"/>
 </segment>
@@ -11484,7 +11521,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <segment>
 <wire x1="40.64" y1="-35.56" x2="33.02" y2="-35.56" width="0.1524" layer="91"/>
 <label x="25.4" y="-35.56" size="1.778" layer="95"/>
-<pinref part="X1" gate="-4" pin="S"/>
+<pinref part="PROG" gate="-4" pin="S"/>
 </segment>
 </net>
 <net name="TCK" class="0">
@@ -11496,7 +11533,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <segment>
 <wire x1="40.64" y1="-30.48" x2="33.02" y2="-30.48" width="0.1524" layer="91"/>
 <label x="25.4" y="-30.48" size="1.778" layer="95"/>
-<pinref part="X1" gate="-2" pin="S"/>
+<pinref part="PROG" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="MCO" class="0">
@@ -11651,9 +11688,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pinref part="U$6" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="VI"/>
+<pinref part="LDFM33PUR" gate="G$1" pin="VI"/>
 <wire x1="231.14" y1="38.1" x2="228.6" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="EN"/>
+<pinref part="LDFM33PUR" gate="G$1" pin="EN"/>
 <wire x1="228.6" y1="38.1" x2="223.52" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="33.02" x2="228.6" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="33.02" x2="228.6" y2="38.1" width="0.1524" layer="91"/>
@@ -11683,7 +11720,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pinref part="U$6" gate="G$1" pin="CANH"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="-40.64" x2="76.2" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-40.64" x2="73.66" y2="-40.64" width="0.1524" layer="91"/>
 <label x="68.58" y="-40.64" size="1.778" layer="95"/>
 <pinref part="CAN" gate="G$1" pin="-2"/>
 </segment>
@@ -11696,7 +11733,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <label x="215.9" y="-40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="-38.1" x2="76.2" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-38.1" x2="73.66" y2="-38.1" width="0.1524" layer="91"/>
 <label x="68.58" y="-38.1" size="1.778" layer="95"/>
 <pinref part="CAN" gate="G$1" pin="-1"/>
 </segment>
